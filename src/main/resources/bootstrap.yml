@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: kasha_msa_project
+  cloud:
+    config:
+      uri: {vcap.services.configuration-service.credentials.uri:http://localhost:8080}
